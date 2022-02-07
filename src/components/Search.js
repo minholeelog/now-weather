@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './Search.css'
 
 function Search({ setQuery }) {
   const [input, setInput] = useState('')
@@ -14,13 +15,13 @@ function Search({ setQuery }) {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="search-wrapper">
       <input
         placeholder="날씨가 궁금해요..."
         onChange={onChange}
         value={input}
+        className="search-box"
       />
-      <button>Search</button>
     </form>
   )
 }

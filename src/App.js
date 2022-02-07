@@ -16,7 +16,6 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=${REACT_APP_API_KEY}`
       )
       .then((response) => {
-        console.log(response.data)
         const {
           main: { temp },
           sys: { country },
@@ -41,9 +40,11 @@ function App() {
       })
   }, [query])
   return (
-    <div className="App">
-      <Search setQuery={setQuery} />
-      {!isLoading && <Weather weather={weather} />}
+    <div className="app">
+      <main>
+        <Search setQuery={setQuery} />
+        {!isLoading && <Weather weather={weather} />}
+      </main>
     </div>
   )
 }
