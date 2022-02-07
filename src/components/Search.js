@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Search.css'
 
-function Search({ setQuery }) {
+function Search({ setQuery, error }) {
   const [input, setInput] = useState('')
 
   const onChange = (event) => {
