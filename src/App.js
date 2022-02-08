@@ -31,6 +31,7 @@ function App() {
           detail: detail,
           dt: dt,
         })
+        setError(null)
       })
       .catch((err) => {
         setError(err)

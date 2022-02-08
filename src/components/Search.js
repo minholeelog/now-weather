@@ -6,18 +6,26 @@ function Search({ setQuery, error }) {
 
   const onChange = (event) => {
     const { value } = event.target
+
     setInput(value)
   }
 
   const onSubmit = (event) => {
     event.preventDefault()
+    const checkRegex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/
+    if (checkRegex.test(input)) {
+      alert('영문 도시명을 입력하세요.')
+      return
+    }
+
+    setInput('')
     setQuery(input)
   }
 
   return (
     <form onSubmit={onSubmit} className="search-wrapper">
       <input
-        placeholder="날씨가 궁금해요..."
+        placeholder="영문 도시명을 입력하세요... ex) London"
         onChange={onChange}
         value={input}
         className="search-box"
