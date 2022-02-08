@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/now-weather/static/css/main.284bac85.css",
+    "main.js": "/now-weather/static/js/main.2674699e.js",
+    "static/media/warm-bg.jpeg": "/now-weather/static/media/warm-bg.a7f83012aa30f33e19ee.jpeg",
+    "static/media/cold-bg.jpeg": "/now-weather/static/media/cold-bg.a3f3f533d3caea133b5f.jpeg",
+    "index.html": "/now-weather/index.html",
+    "main.284bac85.css.map": "/now-weather/static/css/main.284bac85.css.map",
+    "main.2674699e.js.map": "/now-weather/static/js/main.2674699e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284bac85.css",
+    "static/js/main.2674699e.js"
+  ]
+}
