@@ -45,7 +45,7 @@ function App() {
       <main>
         <Search setQuery={setQuery} error={error} />
         {error && (
-          <div className="error-msg">Opps! {query} is not a actual city. </div>
+          <div className="error-msg">Opps! {query} is not an actual city. </div>
         )}
         {!isLoading && <Weather weather={weather} />}
       </main>
